@@ -1,4 +1,4 @@
 name: Java Developer Archive
-pygments: false
-highlighter: rouge
+pygments: true
+highlighter: pygments
 url: http://http://djagielo.github.io
