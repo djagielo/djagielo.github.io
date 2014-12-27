@@ -26,7 +26,7 @@
 			<ul class="title-area">
 				<li class="name">
 					<h1>
-						<a href="/">Home</a>
+						<a class="menuLink" href="/">Home</a>
 					</h1>
 				</li>
 				<li class="toggle-topbar menu-icon">
@@ -38,22 +38,22 @@
 			<section class="top-bar-section">
 				<ul class="right">
 					<li>
-						<a href="/about">About Me</a>
+						<a class="menuLink" href="/about">About Me</a>
 					</li>
 				</ul>
 				<ul class="left">
 					<li>
-						<a href="/links">Links</a>
+						<a class="menuLink" href="/links">Links</a>
 					</li>
 				</ul>
 				<ul class="left">
 					<li>
-						<a href="/downloads">Downloads</a>
+						<a class="menuLink" href="/downloads">Downloads</a>
 					</li>
 				</ul>
 				<ul class="left">
 					<li>
-						<a href="/tags">Tag cloud</a>
+						<a class="menuLink" href="/tags">Tag cloud</a>
 					</li>
 				</ul>
 			</section>
@@ -66,12 +66,13 @@
 					<br />
 					Author <br />
 					<ul class="vcard">
-						<a class="th" href=""> <img src="/images/me.jpg"> </a>
+						<center><a class="th" href=""> <img src="/images/me.jpg"> </a>
 						<li class="fn">Dariusz Jagieło</li>
 						<li class="fn">Java Developer</li>
 						<li class="email"><a href="mailto:dariusz.jagielo@gmail.com"><img src="/images/icons/email.png"/></a>
 						<a href="http://github.com/djagielo/" target="_blank"><img src="/images/icons/github.png"/></a>
-						<a href="https://www.linkedin.com/pub/dariusz-jagie%C5%82o/9a/381/935" target="_blank"><img src="/images/icons/linkedin.png"/></a></li>
+						<a href="https://www.linkedin.com/pub/dariusz-jagie%C5%82o/9a/381/935" target="_blank"><img src="/images/icons/linkedin.png"/></a>
+						<a href="/feed.xml" target="blank_"><img alt="Feed" src="/images/icons/rss.png" /></a></li></center>
 					</ul>
 					<br />
 					
@@ -126,12 +127,5 @@
 		<script>
 			$(document).foundation();
 		</script>
-		
-		<footer>
-		<div class="large-12" style="position: absolute; bottom: 0; horizontal-align: center;">
-		<center>
-			<font color="gray">Dariusz Jagieło 2014, Feed: <a href="/feed.xml" target="blank_"><img alt="Feed" src="/images/icons/rss.png"</a></font></center>
-		</div>
-		</footer>
     </body>
 </html>

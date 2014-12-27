@@ -1823,7 +1823,7 @@ meta.foundation-mq-topbar {
     .top-bar-section ul li > a {
       display: block;
       width: 100%;
-      color: #FFFFFF;
+	  color: #FFFFFF;
       padding: 12px 0 12px 0;
       padding-left: 0.9375rem;
       font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -3401,16 +3401,16 @@ ul.pagination {
     display: block;
     margin-bottom: 0 !important; }
     .accordion .accordion-navigation.active > a, .accordion dd.active > a {
-      background: #e8e8e8; }
+      background: #F7DCB4; }
     .accordion .accordion-navigation > a, .accordion dd > a {
-      background: #EFEFEF;
+      background: #F7DCB4;
       color: #222222;
       padding: 1rem;
       display: block;
       font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
-        background: #e3e3e3; }
+        background: #A97D5D; }
     .accordion .accordion-navigation > .content, .accordion dd > .content {
       display: none;
       padding: 0.9375rem; }
@@ -3575,11 +3575,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #3344dd;
+  color: #000080;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: #1E90FF; }
   a img {
     border: none; }
 

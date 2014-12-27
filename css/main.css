@@ -8,3 +8,10 @@
 .navBarCustom{
 	color: #332B27 !important;
 }
+
+a.menuLink:hover{
+	color: #1e90ff !important;
+}
+span.menuLink:hover{
+	color: #1e90ff !important;
+}
