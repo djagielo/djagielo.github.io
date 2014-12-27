@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div id="downloads">
+  <h1>Tags</h1>
+  
+  {% for tag in site.tags %}
+	<span class="radius secondary label" >
+		<a href="/tags/{{tag | first | slugize}}" style="font-size: {{ tag | last | size | times: 100 | divided_by: site.tags.size | plus: 70  }}%">{{tag | first}}: {{tag | last | size}}</a>
+	</span>
+  {% endfor %}
+
+</div>

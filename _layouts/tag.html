@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<h2>Posts for tag: {{ page.tag }}</h2>
+
+{% for post in site.posts %}
+	{% if post.tags contains page.tag %}
+		{{post.title}} <br />
+	{% endif %}
+{% endfor %}
