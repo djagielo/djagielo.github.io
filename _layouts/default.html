@@ -14,7 +14,10 @@
 		
 		<!-- Java script -->
 		<script src="/js/vendor/modernizr.js"></script>
-
+		
+		<script src="/js/foundation/foundation.accordion.js"></script>
+		
+		<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
     </head>
     <body>
 		<nav class="top-bar sticky" data-topbar role="navigation">
@@ -48,7 +51,7 @@
 				</ul>
 				<ul class="left">
 					<li>
-						<a href="/tags">Tags</a>
+						<a href="/tags">Tag cloud</a>
 					</li>
 				</ul>
 			</section>
@@ -71,21 +74,49 @@
 					<br />
 					
 					<h4>Archive</h4>
-					{% for post in site.posts %}
-					{% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
-					{% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
-					{% if month != nmonth %}
-						{% if forloop.index != 1 %}</ul>{% endif %}
-						<h3>{{ post.date | date: '%B %Y' }}</h3><ul>
+					<dl class="accordion" data-accordion>
+					{% for post in site.posts  %}
+					{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+					{% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+					{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+					{% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+
+					{% if forloop.first %}
+					<dd class="accordion-navigation">
+					<a href="#panel{{this_year}}">{{this_year}}</a>
+					<div id="panel{{this_year}}" class="content active">
+					<h5 id="{{ this_year }}-{{ this_month }}-ref">{{ this_month }}</h5>
+					<ul>
 					{% endif %}
+
 					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-					<time>{{ post.date | date: "%e %B %Y" }}</time>
+
+					{% if forloop.last %}
+					</ul></div></dd>
+					{% else %}
+						{% if this_year != next_year %}
+						</ul>
+						<dd class="accordion-navigation">
+						<a href="#panel{{next_year}}">{{next_year}}</a>
+						<div id="panel{{next_year}}" class="content">
+						<h5 id="{{ next_year }}-{{ next_month }}-ref">{{ next_month }}</h5>
+						<ul>
+						{% else %}    
+							{% if this_month != next_month %}
+							</ul>
+							<h5 id="{{ this_year }}-{{ next_month }}-ref">{{ next_month }}</h5>
+							<ul>
+							{% endif %}
+						{% endif %}
+					{% endif %}
 				{% endfor %}
+				</dl>
 				</div>
 				</div>
-				<div class="large-9 medium-8 columns">
+				<div class="large-9 medium-8 columns">		
 					{{ content }}
 				</div>
+			
 			</div>
 		</section>
 		<script src="/js/vendor/jquery.js"></script>
@@ -93,5 +124,12 @@
 		<script>
 			$(document).foundation();
 		</script>
+		
+		<footer>
+		<div class="large-12" style="position: absolute; bottom: 0; horizontal-align: center;">
+		<center>
+			<font color="gray">Dariusz Jagieło 2014, Feed: <a href="/feed.xml" target="blank_"><img alt="Feed" src="/images/icons/rss.png"</a></font></center>
+		</div>
+		</footer>
     </body>
 </html>
