@@ -17,8 +17,14 @@
 		
 		<hr>
 		
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, veritatis, tempora, necessitatibus inventore nisi quam quia repellat ut tempore laborum possimus eum dicta id animi corrupti debitis ipsum officiis rerum.</p>
-		<a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+		<p>
+		{% if post.content contains "<!-- more -->" %}
+			{{ post.content | split:"<!-- more -->" | first % }}
+		{% else %}
+			{{ post.content | strip_html | truncatewords:100 }}
+		{% endif %}
+		</p>
+		<a class="btn btn-primary" href="{{post.url}}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
 
 		<hr>
 	</div>

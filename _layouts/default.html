@@ -13,6 +13,8 @@
 		<link href="/css/blog-post.css" rel="stylesheet">
 		
 		<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+		
+		{% include custom/my_google_search.html %}
     </head>
     <body>	
 		<!-- Navigation -->
@@ -83,9 +85,9 @@
 						<div class="well">
 							<h4>Blog Search</h4>
 							<div class="input-group">
-								<input type="text" class="form-control">
+								<input id="my-google-search" type="text" class="form-control">
 								<span class="input-group-btn">
-									<button class="btn btn-default" type="button">
+									<button class="btn btn-default" type="button" onclick="my_search_google();">
 										<span class="glyphicon glyphicon-search"></span>
 								</button>
 								</span>
