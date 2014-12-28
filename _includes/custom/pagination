@@ -1,14 +1,10 @@
----
-layout: default
-title: Java Developer Archive
----
-
-<div id="home">
+<div id="posts">
 	<h1 class="page-header">
 		Java Developer Archive
 			<small>developer's everyday problems :)</small>
 	</h1>
-	{% for post in site.posts limit: site.paginate%}
+	
+	{% for post in paginator.posts %}
 	<div class="article">
 		<!-- First Blog Post -->
 		<h2>
@@ -27,17 +23,26 @@ title: Java Developer Archive
 		<hr>
 	</div>
 	{% endfor %}
-	
-	
-	{%assign count = site.posts | size%}
-	<!-- Pager -->
-	<ul class="pager">
-		<li class="previous {% if count <= site.paginate %} disabled {%endif%}">
-			<a href="/posts/page2">&larr; Older</a>
-		</li>
-		<li class="next disabled">
-			<a href="">Newer &rarr;</a>
-		</li>
-	</ul>
 
+	<ul class="pager">
+	{% if paginator.next_page %}
+		<li class="previous">
+			<a href="/posts/page{{ paginator.next_page }}">&larr; Older</a>
+		</li>
+	{%else%}
+		<li class="previous disabled">
+			<a href="">&larr; Older</a>
+		</li>
+	{%endif%}
+	
+	{% if paginator.page == 2 %}
+		<li class="next">
+			<a href="/">Newer &rarr;</a>
+		</li>
+	{% else %}
+		<li class="next">
+			<a href="/posts/page{{ paginator.previous_page }}">Newer &rarr;</a>
+		</li>
+	{% endif %}
+	</ul>
 </div>
