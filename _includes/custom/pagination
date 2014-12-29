@@ -25,7 +25,9 @@
 		{% endif %}
 		</p>
 		<a class="btn btn-primary" href="{{post.url}}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
+		{% if post.comments %}
+			<a class="btn btn-success" href="{{post.url}}#disqus_thread"></span></a>
+		{% endif %}
 		<hr>
 	</div>
 	{% endfor %}

@@ -12,7 +12,7 @@ title: Java Developer Archive
 	<div class="article">
 		<!-- First Blog Post -->
 		<h2>
-			<a href="{{post.url}}">{{post.title}}</a>
+			<a href="{{post.url}}">{{post.title}}</a><br />
 		</h2>
 		<p class="lead">
 			by {{post.author}}</a>
@@ -28,7 +28,9 @@ title: Java Developer Archive
 		{% endif %}
 		</p>
 		<a class="btn btn-primary" href="{{post.url}}">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
+		{% if post.comments %}
+			<a class="btn btn-success" href="{{post.url}}#disqus_thread"></span></a>
+		{% endif %}
 		<hr>
 	</div>
 	{% endfor %}
