@@ -1,6 +1,6 @@
 name: Java Developer Archive
 pygments: true
 highlighter: pygments
-url: http://http://djagielo.github.io
+url: http://djagielo.pl
 paginate: 2
 paginate_path: posts/page:num
