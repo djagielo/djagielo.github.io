@@ -113,9 +113,9 @@
 						<div class="well">
 							<h4>Blog Search</h4>
 							<div class="input-group">
-								<input id="my-google-search" type="text" class="form-control">
+								<input id="my-google-search" type="text" class="form-control" >
 								<span class="input-group-btn">
-									<button class="btn btn-default" type="button" onclick="my_search_google();">
+									<button id="my-google-search-btn" class="btn btn-default" type="button" onclick="my_search_google();">
 										<span class="glyphicon glyphicon-search"></span>
 								</button>
 								</span>
@@ -237,5 +237,13 @@
 			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 		}());
     </script>
+	
+		<script type="text/javascript">
+			$('#my-google-search').keyup(function(event){
+				if(event.keyCode == 13){
+					my_search_google();
+				}
+			});
+		</script>
     </body>
 </html>

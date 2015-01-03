@@ -4,11 +4,14 @@ layout: default
 
 <h2>{{ page.title }}</h2>
 <p class="meta"><span class="glyphicon glyphicon-time"></span> {{ page.date }}</p>
+{% include post-tags.html %}
 <hr>
 <div class="post">
 {{ content }}
-
-{% include post-tags.html %}
+{% if page.author %}
+<br/><center><h5><small>Author: {{page.author}} </small></h5></center>
+{% endif %}
+<hr>
 <h2>Comments</h2>
 {% include comments.html %}
 </div>
