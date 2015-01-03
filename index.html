@@ -40,7 +40,7 @@ title: Java Developer Archive
 	<!-- Pager -->
 	<ul class="pager">
 		<li class="previous {% if count <= site.paginate %} disabled {%endif%}">
-			<a href="/posts/page2">&larr; Older</a>
+			<a href="{% if count > site.paginate %}/posts/page2{%endif%}">&larr; Older</a>
 		</li>
 		<li class="next disabled">
 			<a href="">Newer &rarr;</a>
