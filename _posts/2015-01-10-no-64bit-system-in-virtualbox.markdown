@@ -4,6 +4,7 @@ title:  "No 64bit systems on list in VirtualBox on Windows 8.1 host"
 date:   2015-01-10 17:00:00
 comments: true
 author: Dariusz Jagieło
+identifier: /2015/01/10/no-64bit-system-in-virtualbox.html
 tags:
 - virtualbox
 ---

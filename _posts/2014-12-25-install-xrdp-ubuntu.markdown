@@ -4,6 +4,7 @@ title:  "How to install xrdp on Lubuntu server edition"
 date:   2014-12-25 17:00:00
 comments: true
 author: Dariusz Jagieło
+identifier: /2014/12/25/install-xrdp-ubuntu.html
 tags:
 - ubuntu
 - xrdp
