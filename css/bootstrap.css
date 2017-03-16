@@ -1088,7 +1088,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Calibri, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -1218,9 +1218,10 @@ h6 .small,
 .h4 .small,
 .h5 .small,
 .h6 .small {
-  font-weight: normal;
-  line-height: 1;
+  font-style: italic;
+  line-height: 1.5;
   color: #818181;
+  font-size: 14px;
 }
 h1,
 .h1,
@@ -1243,7 +1244,7 @@ h2 .small,
 .h2 .small,
 h3 .small,
 .h3 .small {
-  font-size: 65%;
+  font-size: 45%;
 }
 h4,
 .h4,
@@ -1416,9 +1417,15 @@ a.bg-danger:focus {
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eeeeee;
   color:#fff;
+  border-left: 10px solid #337ab7;
+  padding-left: 15px;
 }
+
+h1.page-header:hover {
+  color: #337ab7;
+}
+
 ul,
 ol {
   margin-top: 0;
@@ -4172,7 +4179,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
+  height: 30px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -4282,9 +4289,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   padding: 15px 15px;
-  font-size: 18px;
   line-height: 20px;
-  height: 50px;
+  height: 30px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4366,10 +4372,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-nav > li {
     float: left;
-  }
-  .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
   }
 }
 .navbar-form {
