@@ -18,11 +18,12 @@ Couple days ago I started to use my old PC as a home server. It has not good con
 I've chosen Ubuntu Server 14.04.1 LTS for operating system, VirtualBox for VMS. To use VirtualBox in convenient way i needed to install graphical environment, it was LXDE:
 <br />
 
-<pre>
-<code class="bash">
+{% highlight java %}
 sudo apt-get update
 sudo apt-get install --no-install-recommends lubuntu-desktop
-</code></pre>
+
+
+{% endhighlight %}
 
 
 Parameter --no-install-recommends means that it won't install for example Libre Office and other stuff.
@@ -34,7 +35,7 @@ Next we need to install xrdp
 sudo apt-get install xrdp
 </code></pre>
 
-Now you can try connect to your remote desktop but there will be gray screen. 
+Now you can try connect to your remote desktop but there will be gray screen.
 
 <div>
 <center>
@@ -78,7 +79,7 @@ fi
 </code></pre>
 
 If you still see gray screen check you probably have not startlxde installed:
-  
+
   <a class="fancybox" rel="group" href="/images/posts/26_12_2014/5.PNG"><img class="center" src="/images/posts/26_12_2014/5.PNG" alt="" /></a>
 
 and if you don't have, install using command:

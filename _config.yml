@@ -1,4 +1,74 @@
-name: Java Developer Archive
-url: http://djagielo.pl
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site title
+title: "Developer Archive"
+
+# A description of your site for social meta tag, search engines, and feed.xml
+description: "Personal blog used as an archive of solved issues, ideas, notes."
+
+# Tagline near the site title
+tagline: "developer's everyday problems ;)"
+
+# The subpath of your site, e.g. /blog, for generating urls
+baseurl:
+
+sass:
+  sass_dir: _sass
+
+# The base hostname & protocol of your site for where absolute urls are needed
+url: "https://djagielo.me"
+
+# Site navigation - each item must have a title and a url.
+navigation:
+- text: Home
+  url: /
+- text: Links
+  url: /links/
+- text: Notes
+  url: /notes/
+- text: Tags
+  url: /tags/
+
+# The shortname for your Disqus site to enable comments.
+disqus: "javadeveloperarchive"
+
+# Author information - author info at the bottom of the post
+author_name: "Dariusz Jagieło"
+author_bio: "Dariusz is Java developer with almost 5 year experience."
+author_url:  "https://djagielo.me"
+author_location: "Katowice, Poland"
+author_image: /images/authorimage.png
+
+# Sidebar Add banner
+banner_url: "http://justgoodthemes.com"
+banner_image: images/banner.jpg
+
+# Sidebar newsletter widget - add your form action url for MailChimp signup form here
+mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
+
+# Social links in the site footer
+twitter_username: "username"
+facebook_username: "username"
+googleplus_username: "+username"
+github_username: "djagielo"
+codepen_username: "username"
+dribbble_uername: "username"
+medium_username: "@username"
+instagram_username: "username"
+pinterest_username: "username"
+linkedin_username: "username"
+
+# http://jekyllrb.com/docs/pagination/
 paginate: 5
-paginate_path: posts/page:num
+paginate_path: '/blog/page:num/'
+gems: [jekyll-paginate]
+
+permalink: pretty
+markdown: kramdown
+kramdown:
+    auto_ids: false
