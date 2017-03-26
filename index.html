@@ -3,10 +3,10 @@ layout: default
 ---
 <div class="site-content">
     <div class="inner">
-        <main class="site-main"> 
+        <main class="site-main">
             {% for post in paginator.posts %}
             <article class="post">
-                <header class="entry-header"> 
+                <header class="entry-header">
                     <div class="entry-header-wrap">
                         {% if post.banner_image %}
                         <a href="{{site.baseurl}}{{post.url}}" class="post-thumbnail"><img src="{{ "/images/posts/" | append: post.banner_image | prepend: site.baseurl }}" alt="{% if post.banner_image_alt %}{{ post.banner_image_alt }}{% else %}{{ post.title }} {% endif %}"></a>
