@@ -1,5 +1,13 @@
 <aside class="sidebar">
 
+    <section class="widget widget-text">
+        <h2 class="widget-title">Search</h2>
+        <form action="/search" method="get">
+          <input type="text" id="search-box" name="query">
+          <input type="submit" value="search">
+        </form>
+    </section><!-- .widget-text -->
+
     {% if site.author_bio and site.author_name %}
     <section class="widget widget-text">
         <h2 class="widget-title">About {{ site.author_name }}</h2>

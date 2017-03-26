@@ -33,6 +33,8 @@ navigation:
   url: /notes/
 - text: Tags
   url: /tags/
+- text: search
+  url: /search/
 
 # The shortname for your Disqus site to enable comments.
 disqus: "javadeveloperarchive"
