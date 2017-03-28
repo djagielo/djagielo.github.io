@@ -29,8 +29,6 @@ navigation:
   url: /
 - text: Links
   url: /links/
-- text: Notes
-  url: /notes/
 - text: Tags
   url: /tags/
 - text: search
