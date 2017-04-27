@@ -39,7 +39,7 @@ disqus: "javadeveloperarchive"
 
 # Author information - author info at the bottom of the post
 author_name: "Dariusz Jagieło"
-author_bio: "Dariusz is a Java developer with almost 5 year experience. In the past I was working with monolithic applications, now I'm enthusiast of light, microservice-based apps."
+author_bio: "I'm a Java developer with almost 5 year experience. In the past I used to work mainly with monolithic applications, now I'm enthusiast of light, microservice-based apps."
 author_url:  "https://djagielo.me"
 author_location: "Katowice, Poland"
 author_image: /images/authorimage.png
