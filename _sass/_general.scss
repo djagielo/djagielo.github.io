@@ -103,7 +103,6 @@ pre {
 
 pre:before {
     background-color: $gallery;
-    content: "\f121";
     font-family: 'fontawesome' !important;
     font-size: 14px;
     font-style: normal;
@@ -217,7 +216,7 @@ textarea {
     border-radius: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing:    border-box;
-    box-sizing:         border-box; 
+    box-sizing:         border-box;
     color: lighten( $mine-shaft, 4% );
     font-size: 16px;
     max-width: 100%;
@@ -392,7 +391,7 @@ video {
     text-shadow: none;
 }
 
-/* Syntax Highlighter - Solarized Light 
+/* Syntax Highlighter - Solarized Light
 http://ethanschoonover.com/solarized
 
 SOLARIZED HEX      ROLE

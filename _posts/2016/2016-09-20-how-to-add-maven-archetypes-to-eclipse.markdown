@@ -26,7 +26,7 @@ Windows -> Preferences -> Maven -> Archetypes.
 
 Now you need to add catalog from file and give description:
 
-<pre><code class="bash">
+<pre><code class="language-bash">
 http://repo1.maven.org/maven2/archetype-catalog.xml
 </code></pre>
 
