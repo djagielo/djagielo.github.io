@@ -3,7 +3,6 @@ layout: compress
 ---
 {% include assets/js/jquery.min.js %}
 {% include assets/js/plugins.js %}
-{% include assets/js/prism.js %}
 {% include assets/js/custom.js %}
 {% include assets/js/fancybox/jquery.fancybox.pack.js %}
 
@@ -18,3 +17,5 @@ layout: compress
 $(document).ready(function() {
     $(".fancybox").fancybox();
 });
+
+{% include assets/js/prism.js %}
