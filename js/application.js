@@ -19,3 +19,5 @@ $(document).ready(function() {
 });
 
 {% include assets/js/prism.js %}
+
+{% include assets/js/clipboard.min.js %}
