@@ -1,7 +1,0 @@
----
-layout: compress
----
-{% include assets/css/fancybox/jquery.fancybox-buttons.css %}
-{% include assets/css/fancybox/jquery.fancybox-thumbs.css %}
-{% include assets/css/fancybox/jquery.fancybox.css %}
-{% include assets/css/prism.css %}
