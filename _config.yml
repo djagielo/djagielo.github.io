@@ -3,7 +3,7 @@ name: Dariusz Jagieło
 job_title: Java Developer
 email: dariusz.jagielo@gmail.com
 description:
-avatar: images/me.jpg
+avatar: /images/me.jpg
 favicon: /favicon.ico
 twitter_handler: your_handler
 analytics_code: UA-96197298-1
