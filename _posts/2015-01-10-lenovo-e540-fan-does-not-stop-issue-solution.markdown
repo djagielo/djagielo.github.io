@@ -8,6 +8,10 @@ identifier: /2015/01/10/lenovo-e540-fan-does-not-stop-issue-solution.html
 tags:
 - lenovo
 ---
+<figure class="aligncenter">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/ThinkPad_Logo_on_W520.JPG/2560px-ThinkPad_Logo_on_W520.JPG" />
+</figure>
+
 
 Last year(June) I bought new laptop for me - it was Lenovo e540 with core i7. But all the time I had problem (like others Lenovo e540 users) with fan noise. When it started to spin once i was not going to stop even if computer was IDLE. Suspending computer was solution only for couple of seconds after laptop up.
 <!--more-->
