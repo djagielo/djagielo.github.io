@@ -10,6 +10,10 @@ tags:
 - xrdp
 - lubuntu
 ---
+<figure class="aligncenter">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Lubuntu_logo.svg" />
+</figure>
+
 
 Couple days ago I started to use my old PC as a home server. It has not good configuration but for home purposes it's good enough(core i5, 16GB DDR3, 1TB HDD, Gigabit Ethernet). I'm going to install there some VMs for tests of my University project and also to try some technologies that are new for me: Jenkins and Docker.
 
