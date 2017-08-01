@@ -10,6 +10,10 @@ tags:
 - maven
 ---
 
+<figure class="aligncenter">
+    <img src="/images/posts/20_09_2016/maven.png" />
+</figure>
+
 If you have fresh install of Eclipse and try to create project from maven archetypes you will only see short list of them. We need to add archetypes from public repository.
 
 <!--more-->

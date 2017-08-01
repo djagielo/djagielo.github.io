@@ -8,6 +8,9 @@ identifier: /2015/01/10/no-64bit-system-in-virtualbox.html
 tags:
 - virtualbox
 ---
+<figure class="aligncenter">
+    <img src="https://cdn.worldvectorlogo.com/logos/virtualbox.svg" />
+</figure>
 
 Today I had problem on my Windows 8.1 laptop with VirtualBox, I wanted to create linux virtual machine in virtualbox and there were only 32bit systems on the list.
 <!--more-->

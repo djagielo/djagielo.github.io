@@ -9,6 +9,9 @@ tags:
 - intellij
 - gradle
 ---
+<figure class="aligncenter">
+    <img src="https://www.jetbrains.com/idea/features/screenshots/16/why_test_runner.png" />
+</figure>
 
 Solution for JAVA_HOME not defined yet problem while importing existing Gradle project during first setup of IntelliJ.
 
