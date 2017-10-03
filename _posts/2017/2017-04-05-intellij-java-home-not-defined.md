@@ -19,7 +19,7 @@ Solution for JAVA_HOME not defined yet problem while importing existing Gradle p
 
 <div>
 <center>
-	<a class="fancybox" rel="group" href="/images/posts/05_04_2017/1.png"><img class="fb20" src="/images/posts/05_04_2017/1.png" alt="" /></a>
+	<a class="fancybox" rel="group" href="/images/posts/05_04_2017/1.png"><img class="fb20 post-image" src="/images/posts/05_04_2017/1.png" alt="" /></a>
 </center>
 </div>
 
@@ -28,8 +28,8 @@ and add new SDK (pointing to JDK folder on your computer)
 
 <div>
 <center>
-	<a class="fancybox" rel="group" href="/images/posts/05_04_2017/2.png"><img class="fb20" src="/images/posts/05_04_2017/2.png" alt="" /></a>
-  <a class="fancybox" rel="group" href="/images/posts/05_04_2017/3.png"><img class="fb20" src="/images/posts/05_04_2017/3.png" alt="" /></a>
+	<a class="fancybox" rel="group" href="/images/posts/05_04_2017/2.png"><img class="fb20 post-image" src="/images/posts/05_04_2017/2.png" alt="" /></a>
+  <a class="fancybox" rel="group" href="/images/posts/05_04_2017/3.png"><img class="fb20 post-image" src="/images/posts/05_04_2017/3.png" alt="" /></a>
 </center>
 </div>
 

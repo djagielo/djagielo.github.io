@@ -20,7 +20,7 @@ If you have fresh install of Eclipse and try to create project from maven archet
 
 <div>
 <center>
-	<a class="fancybox" rel="group" href="/images/posts/20_09_2016/1.png"><img class="fb20" src="/images/posts/20_09_2016/1.png" alt="" /></a>
+	<a class="fancybox" rel="group" href="/images/posts/20_09_2016/1.png"><img class="fb20 post-image" src="/images/posts/20_09_2016/1.png" alt="" /></a>
 </center>
 </div>
 
@@ -36,7 +36,7 @@ http://repo1.maven.org/maven2/archetype-catalog.xml
 
 <div>
 <center>
-	<a class="fancybox" rel="group" href="/images/posts/20_09_2016/2.png"><img class="fb20" src="/images/posts/20_09_2016/2.png" alt="" /></a>
+	<a class="fancybox" rel="group" href="/images/posts/20_09_2016/2.png"><img class="fb20 post-image" src="/images/posts/20_09_2016/2.png" alt="" /></a>
 </center>
 </div>
 
@@ -45,7 +45,7 @@ Then click 'Verify' and you should see:
 
 <div>
 <center>
-	<a class="fancybox" rel="group" href="/images/posts/20_09_2016/4.png"><img class="fb20" src="/images/posts/20_09_2016/4.png" alt="" /></a>
+	<a class="fancybox" rel="group" href="/images/posts/20_09_2016/4.png"><img class="fb20 post-image" src="/images/posts/20_09_2016/4.png" alt="" /></a>
 </center>
 </div>
 
@@ -54,6 +54,6 @@ Now when trying to create new project you will have many different archetypes av
 
 <div>
 <center>
-	<a class="fancybox" rel="group" href="/images/posts/20_09_2016/3.png"><img class="fb20" src="/images/posts/20_09_2016/3.png" alt="" /></a>
+	<a class="fancybox" rel="group" href="/images/posts/20_09_2016/3.png"><img class="fb20 post-image" src="/images/posts/20_09_2016/3.png" alt="" /></a>
 </center>
 </div>

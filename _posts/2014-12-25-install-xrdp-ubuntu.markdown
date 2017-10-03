@@ -84,7 +84,7 @@ fi
 
 If you still see gray screen check you probably have not startlxde installed:
 
-  <a class="fancybox" rel="group" href="/images/posts/26_12_2014/5.PNG"><img class="center" src="/images/posts/26_12_2014/5.PNG" alt="" /></a>
+  <a class="fancybox" rel="group" href="/images/posts/26_12_2014/5.PNG"><img class="center post-image" src="/images/posts/26_12_2014/5.PNG" alt="" /></a>
 
 and if you don't have, install using command:
 
@@ -96,5 +96,5 @@ sudo apt-get install lxde-common
 And now it should work :)
 
   <a class="fancybox" href="/images/posts/26_12_2014/6.PNG" title="Orange" rel="group">
-        <img class="center fb50" src="/images/posts/26_12_2014/6.PNG" alt="Orange">
+        <img class="center fb50 post-image" src="/images/posts/26_12_2014/6.PNG" alt="Orange">
   </a>
