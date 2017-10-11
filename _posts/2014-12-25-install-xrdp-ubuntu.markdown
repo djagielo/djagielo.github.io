@@ -18,6 +18,7 @@ tags:
 Couple days ago I started to use my old PC as a home server. It has not good configuration but for home purposes it's good enough(core i5, 16GB DDR3, 1TB HDD, Gigabit Ethernet). I'm going to install there some VMs for tests of my University project and also to try some technologies that are new for me: Jenkins and Docker.
 
 <!--more-->
+<div class="more"></div>
 
 I've chosen Ubuntu Server 14.04.1 LTS for operating system, VirtualBox for VMS. To use VirtualBox in convenient way i needed to install graphical environment, it was LXDE:
 <br />

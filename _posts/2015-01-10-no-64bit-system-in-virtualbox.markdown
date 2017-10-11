@@ -14,7 +14,7 @@ tags:
 
 Today I had problem on my Windows 8.1 laptop with VirtualBox, I wanted to create linux virtual machine in virtualbox and there were only 32bit systems on the list.
 <!--more-->
-<br />
+<div class="more"></div>
 So I googled the problem and found blog post:<a href="http://www.fixedbyvonnie.com/2014/11/virtualbox-showing-32-bit-guest-versions-64-bit-host-os/">http://www.fixedbyvonnie.com/2014/11/virtualbox-showing-32-bit-guest-versions-64-bit-host-os/</a>
 
 #### Summary from the post available in the link above:

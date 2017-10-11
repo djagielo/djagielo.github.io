@@ -16,6 +16,7 @@ tags:
 Solution for JAVA_HOME not defined yet problem while importing existing Gradle project during first setup of IntelliJ.
 
 <!--more-->
+<div class="more"></div>
 
 <div>
 <center>
