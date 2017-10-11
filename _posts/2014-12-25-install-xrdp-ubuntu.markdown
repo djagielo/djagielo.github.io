@@ -22,20 +22,17 @@ Couple days ago I started to use my old PC as a home server. It has not good con
 I've chosen Ubuntu Server 14.04.1 LTS for operating system, VirtualBox for VMS. To use VirtualBox in convenient way i needed to install graphical environment, it was LXDE:
 <br />
 
-{% highlight java %}
+<pre><code class="language-bash">
 sudo apt-get update
 sudo apt-get install --no-install-recommends lubuntu-desktop
-
-
-{% endhighlight %}
+</code></pre>
 
 
 Parameter --no-install-recommends means that it won't install for example Libre Office and other stuff.
 
 Next we need to install xrdp
 
-<pre>
-<code class="bash">
+<pre><code class="language-bash">
 sudo apt-get install xrdp
 </code></pre>
 
@@ -50,7 +47,7 @@ Now you can try connect to your remote desktop but there will be gray screen.
 
 Xrdp by default uses command 'startx', we need to change it to startlxde
 
-<pre><code class="bash">
+<pre><code class="language-bash">
 sudo vim /etc/xrdp/startwm.sh
 </code></pre>
 
@@ -58,19 +55,19 @@ sudo vim /etc/xrdp/startwm.sh
 
 Comment line '/etc/X11/Xsession':
 
-<pre><code class="bash">
+<pre><code class="language-bash">
 #'/etc/X11/Xsession'
 </code></pre>
 
 And add line:
 
-<pre><code class="bash">
+<pre><code class="language-bash">
 . /usr/bin/startlxde
 </code></pre>
 
 After this operations your file should look like:
 
-<pre><code class="bash">
+<pre><code class="language-bash">
 #!/bin/sh
 
 if [ -r /etc/default/locale ]; then
@@ -88,7 +85,7 @@ If you still see gray screen check you probably have not startlxde installed:
 
 and if you don't have, install using command:
 
-<pre><code class="bash">
+<pre><code class="language-bash">
 sudo apt-get install lxde-common
 </code></pre>
 
