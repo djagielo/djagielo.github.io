@@ -14,8 +14,18 @@ tags:
     <img src="images/posts/10_10_2017/1.PNG" />
 </figure>
 
-Running tests that fail without any useful information may be very frustrating. I've faced this problem with Karma tests for Angular 4 application. I've made few changes and I got message like 'Uncaught NetworkError: Failed to execute 'send' on 'XMLHttpRequest' with no explanation what is wrong. It seems to be a bug and for more details you need to tweak command that runs tests.
+Running tests that fail without any useful information may be very frustrating. I faced this problem with Karma tests for Angular 4 application. I had made few changes in my code and then got message like 'Uncaught NetworkError: Failed to execute 'send' on 'XMLHttpRequest' with no explanation what was wrong. It seems to be a bug and for more details you need to use different command to run tests.
 
 <!--more-->
+<div class="more"></div>
 
-It turns out that if you use
+#### Solution
+Solution (or workaround) is simple - you need to turn off sourcemaps. You won't be able to debug tests in browser but it should give you more explanatory message about the problem. To run tests without sourcemaps use this command:
+
+<pre>
+<code class="language-bash">
+ng test --sourcemaps=false
+</code>
+</pre>
+
+Then after fixing a problem you can use your usual command for tests. This small hack saved me a lot of time. Hope it will get fixed soon.
