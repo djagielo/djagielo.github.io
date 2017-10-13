@@ -11,7 +11,7 @@ tags:
 - angular
 ---
 <figure class="aligncenter">
-    <img src="images/posts/10_10_2017/1.png" />
+    <a href="images/posts/10_10_2017/1.png" data-lightbox="post"><img src="images/posts/10_10_2017/1.png" /></a>
 </figure>
 
 Running tests that fail without any useful information may be very frustrating. I faced this problem with Karma tests for Angular 4 application. I made few changes in my code and then got message: 'Uncaught NetworkError: Failed to execute 'send' on 'XMLHttpRequest' with no explanation what's wrong. It seems to be a Karma/Angular/CLI bug and for more details you need to use a bit hacky command to run tests.
@@ -29,7 +29,7 @@ ng test --sourcemaps=false
 </pre>
 
 <figure class="aligncenter">
-    <img src="images/posts/10_10_2017/2.png" />
+    <a href="images/posts/10_10_2017/2.png" data-lightbox="post"><img src="images/posts/10_10_2017/2.png" /></a>
 </figure>
 
 After fixing a problem you can use your usual command for tests. This small hack saved me a lot of time. Hope it'll get fixed soon!.
