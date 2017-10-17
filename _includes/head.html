@@ -32,11 +32,11 @@
     {% if {{site.favicon != blank}} %}
     <link href="{{ site.favicon }}" rel="shortcut icon" type="image/x-icon" />
     {% endif %}
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl | prepend: site.url}}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" }}">
 
-    <link rel="stylesheet" href="{{ "/assets/css/prism.css" | prepend: site.baseurl | prepend: site.url}}">
+    <link rel="stylesheet" href="{{ "/assets/css/prism.css" }}">
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' }}">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -53,6 +53,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
 
-    <link rel="stylesheet" href="{{ "/assets/css/lightbox.min.css" | prepend: site.baseurl | prepend: site.url}}">
+    <link rel="stylesheet" href="{{ "/assets/css/lightbox.min.css" }}">
     <meta name="google-site-verification" content="A6lMQHUEM6TulUv-LFRhXwUzBQGcV7S_qMkbrMLsutc" />
 </head>
