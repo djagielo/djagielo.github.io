@@ -1,0 +1,24 @@
+{
+  "name": "djagielo.me",
+  "version": "1.0.0",
+  "description": "",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/djagielo/djagielo.github.io.git"
+  },
+  "author": "Dariusz Jagielo",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/djagielo/djagielo.github.io/issues"
+  },
+  "homepage": "https://github.com/djagielo/djagielo.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "child_process": "^1.0.2",
+    "gulp": "^3.9.1"
+  }
+}
