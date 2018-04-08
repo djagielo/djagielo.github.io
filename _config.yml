@@ -13,7 +13,7 @@ disqus: javadeveloperarchive
 # Social Accounts
 social_networks:
 -  { name: facebook, url: 'http://facebook.com/dariusz.jagielo' }
--  { name: twitter, url: 'http://twitter.com' }
+-  { name: twitter, url: '' }
 -  { name: instagram, url: '' }
 -  { name: google-plus, url: '' }
 -  { name: linkedin, url: 'https://www.linkedin.com/in/dariusz-jagie%C5%82o-9353819a' }
