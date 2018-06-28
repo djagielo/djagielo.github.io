@@ -2,7 +2,7 @@ var gulp        = require('gulp');
 var browserSync = require('browser-sync');
 var cp          = require('child_process');
 var _ = require('lodash');
-var fs = require('fs');
+var fs = require('fs-extra');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build --incremental'
@@ -13,8 +13,16 @@ var messages = {
  */
 gulp.task('jekyll-build', function (done) {
     browserSync.notify(messages.jekyllBuild);
-    return cp.spawn( 'jekyll' , ['build', '--incremental'], {stdio: 'inherit'})
+    return cp.spawn( 'jekyll' , ['build'], {stdio: 'inherit'})
         .on('close', done);
+});
+
+/**
+ * Jekyll build once
+ */
+gulp.task('jekyll-build-sync', function (done) {
+    browserSync.notify(messages.jekyllBuild);
+    return cp.execSync( 'jekyll build')
 });
 
 /**
@@ -45,9 +53,14 @@ gulp.task('watch', function () {
 
 gulp.task('generate-tags', function() {
     var tags = require('./_site/tags/tags.json');
+    fs.mkdirSync('tags_tmp');
+    fs.copyFileSync('tags/tags.json', 'tags_tmp/tags.json');
+    fs.removeSync('tags');
+    fs.moveSync('tags_tmp', 'tags');
+
     _.forEach(tags.tags, tag => {
         if (!fs.existsSync(`tags/${tag}`)) {
-            fs.mkdirSync(`tags/${tag}`);
+            fs.mkdirpSync(`tags/${tag}`);
             var stream = fs.createWriteStream(`tags/${tag}/index.md`);
             stream.once('open', function(fd) {
                 stream.write('---\n');
@@ -64,4 +77,4 @@ gulp.task('generate-tags', function() {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['generate-tags', 'browser-sync', 'watch', ]);
+gulp.task('default', ['jekyll-build-sync', 'generate-tags', 'browser-sync', 'watch', ]);

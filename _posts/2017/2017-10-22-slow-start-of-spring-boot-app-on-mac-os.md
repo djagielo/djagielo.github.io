@@ -10,7 +10,7 @@ tags:
 - macos
 ---
 <figure class="aligncenter">
-    <a href="slow-start-of-spring-boot-app-on-mac-os.html"><img style="max-height: 280px; max-width: 407px;" src="/images/posts/22_10_2017/snail.png" /></a>
+    <a href="slow-start-of-spring-boot-app-on-mac-os.html"><img style="max-height: 280px; max-width: 407px;" src="/images/posts/22_10_2017/snail.jpg" /></a>
 </figure>
 
 Some time ago, I realized that Spring Boot applications on my Macbook Pro (i7, 16GB RAM) start really slow - basic ones, just after generation in <a href="https://start.spring.io/">Spring Initializr</a>, about 12 sec. I tested the same application on my Windows PC (i7, 16GBRAM) and the result was about 1,5 sec. What made such a big difference? It turned out that it's known problem with DNS.
