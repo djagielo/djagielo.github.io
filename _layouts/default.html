@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html>
-    {% include head.html %}
+{% include head.html %}
 
-    <body>
-        <div class="wrapper clear">
-            {% include sidebar.html %}
+<body>
+    <div class="wrapper clear">
+        {% include sidebar.html %}
 
-            <main class="the-content" role="main">
-                {% include search.html %}
-                {{ content }}
-            </main>
-        </div>
+        <main class="the-content" role="main">
+            {% include search.html %} {{ content }}
+        </main>
+    </div>
 
-        <hr />
-        <footer>
-          <div>Icons made by <a href="https://www.flaticon.com/authors/kirill-kazachek" title="Kirill Kazachek">Kirill Kazachek</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-      </footer>
-      {% include scripts.html %}
-    </body>
+    <footer>
+
+    </footer>
+    {% include scripts.html %}
+</body>
+
 </html>
